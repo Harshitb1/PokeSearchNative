@@ -1,13 +1,12 @@
 import React from 'react';
-import { StyleSheet, Text, View , Platform } from 'react-native';
-import {Button} from 'native-base';
-
+import { StyleSheet, Text, View , Platform, Image, ImageBackground } from 'react-native';
+import Landing from './src/Landing'
+var myBackground =require('./assets/icons/landing.jpg');
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Button><Text>Hello</Text></Button>
+      <Landing/>
       </View>
     );
   }
